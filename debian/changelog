@@ -1,3 +1,74 @@
+thumbor (3.10.2) unstable; urgency=low
+   
+  * There are compatibility issues with pillow 2.0.0, forcing lower version Cezar Sa Espinola 
+  * release 3.10.1 Bernardo Heynemann 
+  * Fixing result storage error Bernardo Heynemann 
+  * Release 3.10.0 Bernardo Heynemann 
+  * Greyscale filter. Fix #180. Bernardo Heynemann 
+  * Fix #182 Bernardo Heynemann 
+  * Changing logger errors to warn. Fix #184 Bernardo Heynemann 
+  * codeq.io badge Bernardo Heynemann 
+  * Code reformatting Bernardo Heynemann 
+  * Fix #183 Bernardo Heynemann 
+  * Update README.mkd Bernardo Heynemann 
+  * Release 3.9.4 Bernardo Heynemann 
+  * Specifying http loader timeouts and follow redirect settings Bernardo Heynemann 
+  * Fix issue when invalid url passed as argument for http loader. Bernardo Heynemann 
+  * Using old style formatting for compatibility Cezar Sa Espinola 
+  * Adding IGNORE_SMART_ERRORS config option. Cezar Sa Espinola 
+  * Fixes for the error handler Cezar Sa Espinola 
+  * Using persistent redis connection in redis storage Cezar Sa Espinola 
+  * updating pillow to 2.0.0, tests are passing Fabio M. Costa 
+  * Configuration vows now passing Bernardo Heynemann 
+  * Release 3.9.3 Bernardo Heynemann 
+  * Added some vows that prove an issue with meta and result storage. Fixes #178 Bernardo Heynemann 
+  * Removing useless configuration Bernardo Heynemann 
+  * Release 3.9.2 Bernardo Heynemann 
+  * HTTP Loader now uses proper logger and we allow logging to be configured by users Bernardo Heynemann 
+  * Release 3.9.1 Bernardo Heynemann 
+  * Making error handling a little safer. Bernardo Heynemann 
+  * Merge pull request #179 from avelino/master Fabio M. Costa 
+  * Fix import error OpenCV on local detector Thiago Avelino 
+  * Fix import error OpenCV on init feature_detector Thiago Avelino 
+  * Including raven as a test dependency Bernardo Heynemann 
+  * Trying to improve CI reliability Bernardo Heynemann 
+  * Release 3.9.0 Bernardo Heynemann 
+  * Allows users to specify whether they want animated gif support or not. Fixes #165 Bernardo Heynemann 
+  * Error handler vows. 100% covered now Bernardo Heynemann 
+  * Release 3.8.1 Bernardo Heynemann 
+  * Ops, broke the tests Bernardo Heynemann 
+  * Release 3.8.0, fixes 175 Bernardo Heynemann 
+  * Supporting error handlers in thumbor. Included is sentry error handler. Bernardo Heynemann 
+  * Mongo Storage vows fixed Bernardo Heynemann 
+  * release 3.7.3 Bernardo Heynemann 
+  * Reverting to the old tornado Bernardo Heynemann 
+  * Merge branch 'master' of github.com:globocom/thumbor Bernardo Heynemann 
+  * this was generating some str / unicode differences so, getting back to the old way for now Fabio M. Costa 
+  * code changes based on 2to3 output all the changes are 2.6+ compatible Fabio M. Costa 
+  * default verbose 2 for tests Fabio M. Costa 
+  * some test changes based on 2to3, just making code more futureproof™ Fabio M. Costa 
+  * adding mock as a test dependency Fabio M. Costa 
+  * creating an error instance Fabio M. Costa 
+  * Doing small changes to the local_detector and adding tests to it. No logic change has been made. Fabio M. Costa 
+  * making it possible to pass the vow path to make test, just do `make test f=vows/file_vow.py` Fabio M. Costa 
+  * passing ahead the neighbors from a detected face. One could use to detect the face that opencv is most confident that its a face. 
+  * making sure that the necessary api is respected Fabio M. Costa 
+  * version bump 3.7.1.1 Fabio M. Costa 
+  * Added memcache storage Cezar Sa Espinola 
+  * Adding new queued detector backed by Celery with AWS SQS Cezar Sa Espinola 
+  * pyremotecv was useless, queued detectors now depend directly on remotecv Cezar Sa Espinola 
+  * Merge pull request #161 from dhardy92/bugfix_squeezeCompatVersion Bernardo Heynemann 
+  * [DEB] bugfix for debian squeeze packaging: forgot to downgrade compat version to 8 + changelog proposition based on History.md cf 
+  * The color auto detection is now made in c and doesnt use opencv. Got a speed bump of around 100%. Fabio M. Costa 
+  * changing function that auto detects the fill color to get_median_color, which makes more sense Fabio M. Costa 
+  * better error message and more compact code Fabio M. Costa 
+  * redis was failing while running the tests since the password wasnt being passed Fabio M. Costa 
+  * adding some tests for the fill auto feature Fabio M. Costa 
+  * Installing aptitude Bernardo Heynemann 
+  * Updated tornado version - Everything seems to work Bernardo Heynemann 
+
+ -- David Lutz <david.lutz@99designs.com>  Thu, 06 Jun 2013 07:18:13 +0000
+
 thumbor (3.7.1) unstable; urgency=low
 
   * Fix bug with quoting valid characters in URL (by cdemonchy);
